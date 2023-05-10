@@ -1,3 +1,6 @@
+require("dotenv").config();
+console.log(process.env.API_KEY);
+
 const inputText = document.querySelector("#inputText");
 const inputBtn = document.querySelector("#inputBtn");
 
