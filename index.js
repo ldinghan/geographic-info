@@ -17,6 +17,7 @@ const googleLink = document.querySelector("#googleLink");
 
 const apiKey = document.querySelector("#apiKey");
 
+
 const countryCodeMap =  {
     "ANDORRA": "AD",
     "UNITED ARAB EMIRATES": "AE",
