@@ -1,6 +1,3 @@
-require("dotenv").config();
-console.log(process.env.API_KEY);
-
 const inputText = document.querySelector("#inputText");
 const inputBtn = document.querySelector("#inputBtn");
 
@@ -18,7 +15,7 @@ const landAreaText = document.querySelector("#landAreaText");
 const wikipediaLink = document.querySelector("#wikipediaLink");
 const googleLink = document.querySelector("#googleLink");
 
-
+const apiKey = document.querySelector("#apiKey");
 
 const countryCodeMap =  {
     "ANDORRA": "AD",
@@ -362,7 +359,7 @@ async function getInfo(e) {
     const options = {
     method: 'GET',
     headers: {
-        'X-RapidAPI-Key': process.env.API_KEY,
+        'X-RapidAPI-Key': apiKey.value,
         'X-RapidAPI-Host': 'countries-cities.p.rapidapi.com'
     }
     };
